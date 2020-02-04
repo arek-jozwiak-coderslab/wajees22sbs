@@ -16,6 +16,12 @@ public class HomeController {
         log.info("asdasd {}", 12);
         return "home";
     }
+    @RequestMapping("/theme")
+    public String theme(){
+
+        log.info("asdasd {}", 12);
+        return "index";
+    }
 
     @GetMapping("/about")
     @ResponseBody
