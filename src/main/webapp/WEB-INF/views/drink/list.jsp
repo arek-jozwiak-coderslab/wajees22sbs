@@ -385,7 +385,7 @@
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Nazwa</th>
+                                    <th><a href="&sort=name,asc">Nazwa</a></th>
                                     <th>Actoin</th>
                                 </tr>
                                 </thead>
@@ -399,6 +399,7 @@
                                 </c:forEach>
                                 </tbody>
                                 <tfoot>
+
                                 <util:pagination thispage="${page}"></util:pagination>
 
                                 </tfoot>
