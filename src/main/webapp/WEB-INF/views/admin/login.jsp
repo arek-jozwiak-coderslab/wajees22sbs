@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: arek
@@ -12,6 +13,10 @@
 </head>
 <body>
 <h1>Login form ewqewq ewq</h1>
+
+<c:if test="${not empty param.error}">
+    <h1>ERRROOOORRR</h1>
+</c:if>
 <form method="post">
     <div><label> User Name : <input type="text" name="username"/> </label></div>
     <div><label> Password: <input type="password" name="password"/> </label></div>
